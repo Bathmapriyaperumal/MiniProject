@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧠 Memory Game</h1>
+    <div class="controls">
+      <p id="moveCounter">Moves: 0</p>
+      <p id="timer">Time: 0s</p>
+      <p id="score">Points: 0</p>
+      <div id="stars">⭐️⭐️⭐️</div>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="startBtn">▶ Start</button>
+      <button id="restartBtn">🔁 Restart</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="game-board" id="gameBoard"></section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>🎉 You Won!</h2>
+      <p id="finalStats"></p>
+      <button id="nextLevelBtn" class="hidden">Next Level 🚀</button>
+      <button onclick="initGame()">Play Again 🔁</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

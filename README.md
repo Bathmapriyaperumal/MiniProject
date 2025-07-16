@@ -1,2 +1,0 @@
-# MiniProject
-Memory_Game
